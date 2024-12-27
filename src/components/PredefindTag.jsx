@@ -21,8 +21,10 @@ const PredefindTag = ({ title }) => {
     <div
       onClick={handleTag}
       className={`${
-        bgColor === 1 ? "bg-red-900" : ""
-      } cursor-pointer px-2 border-2 font-semibold text-center`}
+        bgColor === 1
+          ? "promax:bg-red-900 bg-red-900"
+          : "bg-green-900 promax:bg-green-900"
+      } cursor-pointer px-2 py-1 rounded-md  promax:px-2 promax:border-2 promax:font-semibold text-center`}
     >
       {title}
     </div>

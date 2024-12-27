@@ -46,7 +46,7 @@ const Body = () => {
         setTag,
       }}
     >
-      <div className="relative text-white min-h-screen">
+      <div className="relative promax:bg-transparent text-white min-h-screen">
         <MainContainer />
       </div>
     </TaskInformation.Provider>

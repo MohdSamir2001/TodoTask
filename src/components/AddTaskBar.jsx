@@ -53,22 +53,22 @@ const AddTaskBar = () => {
   };
   return (
     <form className="w-full" onSubmit={handleSubmit}>
-      <div className="flex items-center">
+      <div className="flex flex-wrap promax:flex-nowrap items-center">
         <input
           ref={inputRef}
-          className="p-[0.627%]  bg-slate-50 outline-none text-black w-4/12 font-semibold "
+          className="promax:p-[0.627%] w-[470px] p-3 text-2xl promax:rounded-none rounded-md  bg-slate-50 outline-none text-black promax:w-4/12 font-semibold "
           type="text"
           placeholder="Add Task In Todo List"
         />
         <DropDownMenu statusRef={statusRef} />
         <button
           type="submit"
-          className="p-2 ml-8 bg-neutral-700 font-semibold rounded-md"
+          className="cursor-pointer rounded-md promax:rounded-none  text-2xl bg-gray-900 ml-2 mt-2 promax:mt-0   promax:bg-blue promax:ml-4 promax:bg-opacity-50 text-white promax:border-b-2  px-2 outline-none  py-2 font-semibold"
         >
           + Add Task
         </button>
       </div>
-      <div className="w-8/12 mt-2 flex gap-2">
+      <div className="promax:w-8/12  w-[465px] flex-wrap mt-2 flex gap-2">
         <PredefindTag title={"Apptitude"} />
         <PredefindTag title={"React"} />
         <PredefindTag title={"DSA"} />

@@ -5,7 +5,7 @@ const DropDownMenu = ({ statusRef }) => {
     <div>
       <select
         ref={statusRef}
-        className="cursor-pointer ml-2 bg-transparent bg-opacity-50 text-white border-b-2  px-1 outline-none  py-2 font-semibold"
+        className="cursor-pointer rounded-md promax:rounded-none ml-0 text-2xl bg-red-950 mt-2 promax:mt-0  promax:ml-0 promax:bg-transparent promax:bg-opacity-50 text-white promax:border-b-2  px-1 outline-none  py-2 font-semibold"
       >
         <option
           className="bg-blue-950 font-semibold bg-opacity-85"

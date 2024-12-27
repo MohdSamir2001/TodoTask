@@ -4,7 +4,7 @@ import ThreeSections from "./ThreeSections";
 
 const MainContainer = () => {
   return (
-    <div className="bg-blue-950  bg-opacity-80 p-8  h-fit ">
+    <div className="bg-blue-950 promax:bg-blue min-w-[480px] promax:w-full min-h-[1040px]  bg-opacity-80 promax:p-8 p-2  promax:h-fit ">
       <AddTaskBar />
       <ThreeSections />
     </div>

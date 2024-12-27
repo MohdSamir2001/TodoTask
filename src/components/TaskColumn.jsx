@@ -28,7 +28,7 @@ const TaskColumn = ({ tasks, title }) => {
   return tasks.length === 0 ? (
     " "
   ) : (
-    <div className="w-full mt-2 rounded-md">
+    <div className="w-full  mt-2 rounded-md">
       {tasks.map((task, index) => (
         <div
           key={index}
@@ -36,17 +36,23 @@ const TaskColumn = ({ tasks, title }) => {
             opacity: fadeIndex === index ? 0 : 1, // Fade-out effect
             transition: "opacity 0.3s ease-in-out", // Simple fade transition
           }}
-          className="mt-2 p-2 bg-gradient-to-t from-orange-700 bg-black bg-opacity-55"
+          className="mt-2 p-2 bg-gradient-to-t from-gray-700 rounded-md bg-black bg-opacity-90"
         >
-          <h1 className="font-semibold">{task.task}</h1>
-          <div className="flex justify-between mt-2 items-center">
-            <div className="flex gap-2">
+          <h1 className="font-semibold  overflow-x-hidden text-2xl promax:text-base">
+            {task.task}
+          </h1>
+          <div className="flex justify-between flex-wrap  mt-2 items-center">
+            <div className="flex  gap-2">
               {task.tagName.map((task, tagIndex) => (
                 <PredefindTag key={tagIndex} title={task} />
               ))}
             </div>
             <div onClick={() => handleDelete(index)} className="cursor-pointer">
-              <img className="w-8 rounded-md" src={deletIcon} alt="" />
+              <img
+                className="promax:w-8 w-12 rounded-md"
+                src={deletIcon}
+                alt=""
+              />
             </div>
           </div>
         </div>
